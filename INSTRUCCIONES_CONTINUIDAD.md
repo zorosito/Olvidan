@@ -1,7 +1,7 @@
 # Continuidad
 Repositorio: https://github.com/zorosito/Olvidan.git
 
-Leer PROGRESO.md y revisar git status antes de cambiar archivos. Etapas 1–4 implementadas; no comenzar Etapa 5 sin autorización del usuario. Completar comprobación visual pendiente cuando haya navegador disponible.
+Leer PROGRESO.md y revisar git status antes de cambiar archivos. Etapas 1–5 implementadas; quedan pendientes las pruebas reales de Safari/iPhone documentadas en PRUEBAS.md. Completar comprobación visual pendiente cuando haya navegador disponible.
 
 Proyecto estático sin instalación ni compilación. index.html carga style.css, config.js, motion.js y app.js. Motion genera poses angulares; app dibuja SVG y controla la reproducción. Cuando hay audio seleccionado, el reloj de movimiento usa audio.currentTime. Sin audio, la demostración usa tiempo acumulado. No confundir esta demostración con sincronización musical analizada.
 
@@ -39,3 +39,8 @@ Cierre Etapa 4: Experience.sample entrega poses, flor, night, heart y dedication
 Pruebas: `node tests/story.test.cjs`, `node tests/choreography.test.cjs`, `node tests/finale.test.cjs`, `node tests/controls.test.cjs`. La última comprueba también noche, corazón, dedicatoria y reinicio con DOM simulado. Falta revisión audiovisual real en Safari/iPhone; esa limitación permanece explícita. Etapa 5 requiere autorización.
 
 Etapa 5 autorizada. app.js programa requestAnimationFrame solo durante reproducción; refresh renderiza eventos aislados. playRequest invalida promesas antiguas de audio.play al pausar/reiniciar. No restaurar el bucle permanente. Pendientes pruebas ampliadas y cierre de documentación.
+
+
+Cierre Etapa 5: ejecutar `node tests/run.cjs`. PRUEBAS.md distingue las pruebas aprobadas de las verificaciones reales aún pendientes. PUBLICACION.md explica Pages; .nojekyll está preparado, pero no se desplegó. No reconstruir escenas ni añadir dependencias para retomar. Primero comprobar HEAD remoto y estado de trabajo, después abordar problemas observados o la publicación solicitada. Mantener respaldo por cada cambio importante.
+
+El controlador ya no dibuja permanentemente: schedule evita duplicar solicitudes; frame solo continúa si running. render recibe la muestra calculada una sola vez. refresh actualiza eventos aislados. audio-status conserva los mensajes de archivo aunque cambie el nombre de escena. Los controles de práctica están dentro de details, accesibles sin eliminar funciones.

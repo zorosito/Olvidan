@@ -11,3 +11,5 @@ Preparado para GitHub Pages desde la raíz de la rama principal; despliegue toda
 Pruebas sin dependencias: `node tests/story.test.cjs` y `node tests/controls.test.cjs` y `node tests/choreography.test.cjs` y `node tests/finale.test.cjs`. Revisión visual en Safari pendiente.
 
 Consulta ANALISIS_MUSICAL.md para pulso, marcas y límites de la estimación. El cierre nocturno permanece visible al finalizar. Edita `dedication` en config.js para personalizarlo; el botón Volver a reproducir reinicia la historia.
+
+Etapa 5: controles y renderizado optimizados. Ejecuta todas las comprobaciones con `node tests/run.cjs`. Consulta PRUEBAS.md para los resultados y la validación pendiente en Safari; PUBLICACION.md describe la preparación para GitHub Pages. Sitio todavía no desplegado.

@@ -70,3 +70,13 @@ Baile abrazados integrado mediante finale.js (Experience), conservando Choreogra
 
 ## Etapa 5 — Avance 1
 Controlador optimizado: una evaluación de escena por fotograma, sin bucle de dibujo en pausa, inicio asíncrono cancelable al reiniciar y actualización determinista al buscar en audio. Errores y duración de audio aparecen en mensaje independiente. Movimientos de práctica conservados dentro de un desplegable para despejar la vista principal. Pruebas de controles y sintaxis aprobadas; revisión de navegador/iPhone aún no disponible.
+
+
+## Etapa 5 — Implementación y pruebas automatizadas terminadas; validación real pendiente
+- Controlador optimizado y protegido frente a inicio asíncrono obsoleto, errores de audio, búsquedas y cambios de visibilidad. Mensajes de audio separados del nombre de escena.
+- Vista principal simplificada: controles de práctica dentro de un desplegable, conservando todos los movimientos; botones táctiles y foco visible.
+- Todas las pruebas pasan con `node tests/run.cjs`; cubren sintaxis, recursos relativos, geometría, coreografía, final y controlador simulado. Detalles y límites en PRUEBAS.md.
+- Preparación de Pages con .nojekyll y PUBLICACION.md. No se realizó despliegue ni se incluyó música comercial.
+- Primer avance respaldado y verificado: 265e5da. Este informe acompaña el commit de pruebas y preparación final; verificar su SHA remoto tras el push.
+- Falta validación audiovisual, visual, accesibilidad y rendimiento reales en Safari/iPhone. No cerrar estos puntos basándose en tests simulados ni en el microbenchmark de Node.
+- Etapas 1–5 conservadas en el repositorio. No quedan nuevas escenas por implementar; próximas acciones: pruebas reales y correcciones observadas, o publicación cuando el usuario la solicite.
