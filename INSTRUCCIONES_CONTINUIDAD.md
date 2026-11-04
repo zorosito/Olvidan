@@ -12,3 +12,5 @@ La pista de referencia está fuera del repositorio, adjunta a la conversación o
 Guardar cada avance importante, validar, actualizar ambos documentos, crear commit, hacer push y comparar HEAD local con remoto. Si falla el respaldo, detener trabajo adicional y avisar. No publicar sin verificar el despliegue.
 
 La autorización de GitHub de esta sesión usa GH_CONFIG_DIR=/workspace/.github-auth con GH_TOKEN y GITHUB_TOKEN omitidos al ejecutar gh/git. Esa carpeta contiene credenciales y está fuera del repositorio: no leerlas, copiarlas ni versionarlas. En otras sesiones puede ser necesario vincular de nuevo.
+
+Etapa 2 autorizada: story.js añade poses deterministas por marcas temporales; modo Historia en app.js. Conservar modos básicos. Guardar cada escena antes de seguir.

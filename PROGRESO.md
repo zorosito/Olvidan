@@ -21,3 +21,6 @@ Este archivo acompaña el commit de Etapa 1. El resultado del push se debe verif
 5. Ajustes, optimización y pruebas de Safari.
 
 No se ha desplegado GitHub Pages. No se incluye la canción comercial.
+
+## Etapa 2 — Avance 1
+Encuentro implementado en story.js: entrada desde ambos extremos, parada y respuesta tímida. Historia seleccionada al comenzar; los cuatro movimientos de Etapa 1 se conservan. Reloj compartido con audio.currentTime, tiempos provisionales. Sintaxis comprobada. Pendientes flor, abrazo y verificación visual.
