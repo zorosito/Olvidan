@@ -15,7 +15,6 @@
 Este archivo acompaña el commit de Etapa 1. El resultado del push se debe verificar comparando HEAD con la rama remota; un commit local no prueba un respaldo remoto.
 
 ## Próximas etapas (requieren autorización)
-2. Encuentro, flor y abrazo.
 3. Análisis musical, marcas temporales y baile sincronizado con audio.currentTime.
 4. Baile abrazados, noche y dedicatoria.
 5. Ajustes, optimización y pruebas de Safari.
@@ -27,3 +26,15 @@ Encuentro implementado en story.js: entrada desde ambos extremos, parada y respu
 
 ## Etapa 2 — Avance 2
 Flor implementada: mirada, flexión de rodillas, recogida, acercamiento, entrega y reacción con inclinación de cabeza. La flor sigue la mano; la entrega coincide en una posición compartida. Sintaxis y continuidad de posición en recogida/entrega comprobadas. Pendientes abrazo y pruebas finales.
+
+
+## Etapa 2 — Implementada
+- Encuentro, flor y abrazo enlazados en una demostración de 12 segundos.
+- Brazos abiertos, acercamiento, abrazo sostenido y separación suave; la flor se conserva en la mano.
+- Los movimientos de Etapa 1 siguen disponibles; Historia se reproduce por defecto.
+- Final detenido con botón «Volver a reproducir», reinicio y selección local de audio.
+- Pruebas: `node tests/story.test.cjs` y `node tests/controls.test.cjs`; geometría, continuidad, entrega, abrazo, final y controles con DOM simulado. Sintaxis de app.js comprobada.
+- Encuentro respaldado en 6d9ee9a; flor en f4d3fea. Se verificaron ambas ramas remotas tras los pushes. Este informe acompaña el commit final del abrazo; verificar también ese push.
+- Verificación visual pendiente: no hay herramienta de navegador compatible disponible en esta sesión. Las pruebas simuladas no sustituyen Safari de iPhone.
+- Los 12 segundos son tiempos narrativos provisionales, no acentos musicales analizados. Etapa 3 deberá encajar estas escenas y el baile en los 22,151837 segundos del audio.
+- No se ha comenzado Etapa 3, ni publicado el sitio, ni versionado audio comercial.
