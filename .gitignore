@@ -5,3 +5,5 @@
 .DS_Store
 .local-preview/
 __pycache__/
+
+!assets/kumbala.mp3

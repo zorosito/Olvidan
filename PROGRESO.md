@@ -97,3 +97,7 @@ Se verificaron permisos administrativos y repositorio privado. La solicitud de c
 
 ## GitHub Pages — Activación autorizada
 El usuario autorizó hacer público el repositorio. GitHub confirmó private=false y creó Pages desde main /(root), HTTPS obligatorio, URL asignada https://zorosito.github.io/Olvidan/. Este registro documenta configuración; la disponibilidad se debe verificar tras el despliegue. No se cambiaron animaciones ni se incluyó la canción. Usar Elegir audio local desde iPhone para el fragmento original.
+
+
+## Música incluida en el proyecto público
+Por nueva petición explícita del usuario, se añadió el MP3 adjunto como assets/kumbala.mp3 y se configuró audioUrl para reproducirlo al pulsar Comenzar. Se conserva el selector opcional de audio. No se cambiaron poses, coreografía ni tiempos. El ZIP de main incluye la canción y todos los recursos. Esta instrucción sustituye la anterior exclusión de la pista del repositorio público. Verificar push y Pages antes de anunciar disponibilidad.

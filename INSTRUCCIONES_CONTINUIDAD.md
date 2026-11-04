@@ -1,3 +1,7 @@
+## Actualización: música incluida por solicitud del usuario
+
+La última instrucción pide añadir el MP3 adjunto al repositorio público y al ZIP. Ahora config.js apunta a assets/kumbala.mp3, con excepción específica en .gitignore. Las instrucciones anteriores que exigían excluir esta pista quedan supersedidas para este archivo por esa petición. .local-preview sigue excluida. Mantener intactas las animaciones; verificar Pages tras el push.
+
 # Continuidad
 Repositorio: https://github.com/zorosito/Olvidan.git
 

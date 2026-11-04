@@ -1,6 +1,6 @@
 """Build an ignored local preview containing the supplied audio; never publish it."""
 from pathlib import Path
-import shutil, sys, json, subprocess
+import shutil, sys, json, subprocess, re
 root=Path(__file__).resolve().parents[1]
 source=Path(sys.argv[1]).resolve()
 if not source.is_file(): raise SystemExit('Audio file not found')
@@ -12,7 +12,7 @@ out=root/'.local-preview'
 for file in [root/'index.html',*root.glob('*.js'),*root.glob('*.css')]: shutil.copy2(file,out/file.name)
 shutil.copy2(source,out/'assets'/'reference.mp3')
 config=(out/'config.js').read_text()
-config=config.replace("audioUrl: ''", "audioUrl: 'assets/reference.mp3'")
+config=re.sub(r"audioUrl: '[^']*'", "audioUrl: 'assets/reference.mp3'", config)
 (out/'config.js').write_text(config)
 print('Local preview prepared:',out)
 print('Audio duration:',duration,'seconds. Do not publish this folder.')

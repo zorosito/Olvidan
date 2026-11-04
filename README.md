@@ -1,17 +1,11 @@
-# Una pequeña historia de amor
+# Versión publicada con música incluida
 
-Etapas 1–4: encuentro, flor, abrazo, baile coreografiado y final nocturno con dedicatoria. Sin dependencias.
+Sitio: https://zorosito.github.io/Olvidan/
 
-Servir esta carpeta por HTTP y abrir index.html. Pulsa Comenzar para ver la historia completa hasta el segundo 22,1; también puedes seleccionar los movimientos básicos. Puedes elegir una pista local; no se envía a ningún servidor. La coreografía está ajustada al fragmento adjunto de Kumbala (22,15 s). Otro archivo o la canción completa no tendrán la misma sincronización. Sin audio se ofrece una previsualización silenciosa.
+Pulsa **Comenzar**: se reproduce el fragmento adjunto de Kumbala y la animación sigue su reloj. El navegador requiere ese toque para iniciar el sonido.
 
-Edita config.js para cambiar la dedicatoria o establecer una ruta relativa a un audio autorizado. La canción comercial no forma parte del repositorio.
+Descarga todo el proyecto: https://github.com/zorosito/Olvidan/archive/refs/heads/main.zip
 
-Preparado para GitHub Pages desde la raíz de la rama principal; despliegue todavía no realizado. Consulta PROGRESO.md e INSTRUCCIONES_CONTINUIDAD.md.
+Descomprime el ZIP y conserva la estructura de carpetas. Para alojarlo, sube el contenido de la carpeta Olvidan-main a un servidor de sitios estáticos. No requiere compilación; index.html es la entrada y assets/kumbala.mp3 es la pista. Para pruebas locales, usa un servidor HTTP estático. Dedicatoria editable en config.js.
 
-Pruebas sin dependencias: `node tests/story.test.cjs` y `node tests/controls.test.cjs` y `node tests/choreography.test.cjs` y `node tests/finale.test.cjs`. Revisión visual en Safari pendiente.
-
-Consulta ANALISIS_MUSICAL.md para pulso, marcas y límites de la estimación. El cierre nocturno permanece visible al finalizar. Edita `dedication` en config.js para personalizarlo; el botón Volver a reproducir reinicia la historia.
-
-Etapa 5: controles y renderizado optimizados. Ejecuta todas las comprobaciones con `node tests/run.cjs`. Consulta PRUEBAS.md para los resultados y la validación pendiente en Safari; PUBLICACION.md describe la preparación para GitHub Pages. Sitio todavía no desplegado.
-
-Para probar con el MP3 adjunto ya integrado, ejecutar `python3 tools/prepare_local.py RUTA_AL_MP3` (requiere ffprobe). Genera `.local-preview/` con código y audio local, excluida de Git. Servir esa carpeta localmente; nunca desplegarla con la canción comercial. La raíz del proyecto conserva el selector de audio para distribución sin música incluida.
+El usuario solicitó incluir y publicar el MP3 que adjuntó; esta versión reemplaza la distribución anterior sin audio. Las animaciones no se modificaron. Pruebas: `node tests/run.cjs`. La validación audiovisual real en Safari sigue pendiente.
