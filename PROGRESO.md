@@ -91,3 +91,6 @@ Etapa definida por la petición del usuario: comprobar canción y sincronizació
 - Primer respaldo verificado: be6f2f4. El commit que acompaña este informe incluye la corrección del final; verificar también su push.
 - No se pudo certificar visualmente ni escuchar la experiencia sincronizada en Safari/iPhone. No confundir estimación del pulso y tests simulados con esa validación pendiente.
 - Nada publicado; ninguna pista comercial versionada. Etapas anteriores conservadas.
+
+## Publicación solicitada — Bloqueada por el plan de GitHub
+Se verificaron permisos administrativos y repositorio privado. La solicitud de crear GitHub Pages desde main /(root) recibió HTTP 422: «Your current plan does not support GitHub Pages for this repository.» No se modificaron animaciones, no se cambió la visibilidad del repositorio y no hay despliegue verificado. Para continuar: autorización explícita para hacer público el repositorio (incluye código e historial), o habilitar un plan compatible con Pages en repositorios privados. La canción continúa excluida.
