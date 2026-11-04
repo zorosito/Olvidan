@@ -67,3 +67,6 @@ Baile abrazados integrado mediante finale.js (Experience), conservando Choreogra
 - Primer avance respaldado y verificado: deb6c88. El presente informe acompaña el commit final de la escena nocturna; verificar HEAD remoto después del push.
 - Pendiente en Etapa 5: revisión visual, reproducción real con audio, Safari/iPhone, ajustes y rendimiento. No se certifican 60 FPS ni apariencia mediante pruebas simuladas.
 - No se inició Etapa 5, ni se publicó el sitio, ni se subió la canción comercial.
+
+## Etapa 5 — Avance 1
+Controlador optimizado: una evaluación de escena por fotograma, sin bucle de dibujo en pausa, inicio asíncrono cancelable al reiniciar y actualización determinista al buscar en audio. Errores y duración de audio aparecen en mensaje independiente. Movimientos de práctica conservados dentro de un desplegable para despejar la vista principal. Pruebas de controles y sintaxis aprobadas; revisión de navegador/iPhone aún no disponible.
