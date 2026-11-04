@@ -80,3 +80,6 @@ Controlador optimizado: una evaluación de escena por fotograma, sin bucle de di
 - Primer avance respaldado y verificado: 265e5da. Este informe acompaña el commit de pruebas y preparación final; verificar su SHA remoto tras el push.
 - Falta validación audiovisual, visual, accesibilidad y rendimiento reales en Safari/iPhone. No cerrar estos puntos basándose en tests simulados ni en el microbenchmark de Node.
 - Etapas 1–5 conservadas en el repositorio. No quedan nuevas escenas por implementar; próximas acciones: pruebas reales y correcciones observadas, o publicación cuando el usuario la solicite.
+
+## Etapa 6 — Avance 1: integración local de la pista
+Etapa definida por la petición del usuario: comprobar canción y sincronización conservando el proyecto. tools/prepare_local.py genera .local-preview con el MP3 adjunto ya vinculado; carpeta completa ignorada por Git. Se verificó identidad binaria del audio copiado, duración 22,151837 s y reproducción exacta del análisis previo. De los ataques detectados, 39 quedan a menos de 80 ms de la rejilla elegida; sus residuos son 2,52 ms de mediana y 8,36 ms de máximo. Es una medida del ajuste de rejilla, no latencia de reproducción ni validación perceptiva. Pendiente revisión del final del audio y pruebas adicionales.

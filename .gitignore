@@ -3,3 +3,5 @@
 *.m4a
 *.ogg
 .DS_Store
+.local-preview/
+__pycache__/
