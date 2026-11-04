@@ -21,3 +21,5 @@ Cierre Etapa 2: story.js contiene las claves de encuentro (0–4,6 s), flor (4,6
 Ejecutar `node tests/story.test.cjs`, `node tests/controls.test.cjs` y `node --check app.js`. El segundo test simula DOM y audio: no certifica renderizado ni reproducción real. Sigue pendiente revisión visual y Safari. No se dispone de cua_repl.js en esta sesión; no se improvisó navegador alternativo.
 
 La siguiente sesión debe comprobar el HEAD remoto, conservar estos avances y esperar autorización para Etapa 3. No subir credenciales ni la pista original.
+
+Etapa 3 autorizada. Leer ANALISIS_MUSICAL.md: music.js convierte tiempo de audio a tiempo narrativo antiguo para conservar las escenas. audio-analysis.json contiene métricas, no audio. La revisión auditiva y visual sigue pendiente; no afirmar identificación de instrumentos.

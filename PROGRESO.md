@@ -38,3 +38,6 @@ Flor implementada: mirada, flexión de rodillas, recogida, acercamiento, entrega
 - Verificación visual pendiente: no hay herramienta de navegador compatible disponible en esta sesión. Las pruebas simuladas no sustituyen Safari de iPhone.
 - Los 12 segundos son tiempos narrativos provisionales, no acentos musicales analizados. Etapa 3 deberá encajar estas escenas y el baile en los 22,151837 segundos del audio.
 - No se ha comenzado Etapa 3, ni publicado el sitio, ni versionado audio comercial.
+
+## Etapa 3 — Avance 1
+Audio analizado offline; estimación 120,485 BPM, periodo 0,497988 s. Registrados ataques y energía por bandas, con límites del análisis en ANALISIS_MUSICAL.md. music.js define marcas para conservar las poses narrativas y retimar encuentro/flor/abrazo. No se incluye la grabación. Pendiente integración del baile y pruebas.
