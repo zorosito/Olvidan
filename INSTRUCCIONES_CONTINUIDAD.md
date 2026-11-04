@@ -1,7 +1,7 @@
 # Continuidad
 Repositorio: https://github.com/zorosito/Olvidan.git
 
-Leer PROGRESO.md y revisar git status antes de cambiar archivos. Etapas 1 y 2 implementadas; no comenzar Etapa 3 sin autorización del usuario. Completar comprobación visual pendiente cuando haya navegador disponible.
+Leer PROGRESO.md y revisar git status antes de cambiar archivos. Etapas 1–3 implementadas; no comenzar Etapa 4 sin autorización del usuario. Completar comprobación visual pendiente cuando haya navegador disponible.
 
 Proyecto estático sin instalación ni compilación. index.html carga style.css, config.js, motion.js y app.js. Motion genera poses angulares; app dibuja SVG y controla la reproducción. Cuando hay audio seleccionado, el reloj de movimiento usa audio.currentTime. Sin audio, la demostración usa tiempo acumulado. No confundir esta demostración con sincronización musical analizada.
 
@@ -20,6 +20,13 @@ Cierre Etapa 2: story.js contiene las claves de encuentro (0–4,6 s), flor (4,6
 
 Ejecutar `node tests/story.test.cjs`, `node tests/controls.test.cjs` y `node --check app.js`. El segundo test simula DOM y audio: no certifica renderizado ni reproducción real. Sigue pendiente revisión visual y Safari. No se dispone de cua_repl.js en esta sesión; no se improvisó navegador alternativo.
 
-La siguiente sesión debe comprobar el HEAD remoto, conservar estos avances y esperar autorización para Etapa 3. No subir credenciales ni la pista original.
+La siguiente sesión debe comprobar el HEAD remoto y conservar estos avances. No subir credenciales ni la pista original.
 
 Etapa 3 autorizada. Leer ANALISIS_MUSICAL.md: music.js convierte tiempo de audio a tiempo narrativo antiguo para conservar las escenas. audio-analysis.json contiene métricas, no audio. La revisión auditiva y visual sigue pendiente; no afirmar identificación de instrumentos.
+
+
+Cierre Etapa 3: app.js usa Choreography.sample, no Story.sample directamente. Orden de scripts: config, motion, story, music, choreography, app. Story conserva las poses y pruebas originales. Music mapea las marcas nuevas a las anteriores. Choreography genera baile puro en función del tiempo y transforma manos entre coordenadas locales y globales para mantener contacto al pivotar. No cambiar body sin mantener esa transformación.
+
+Ejecutar también `node tests/choreography.test.cjs`: recorre la coreografía a 120 muestras/s, verifica continuidad, contacto y determinismo. controls.test.cjs carga los nuevos módulos y cubre final/repetición y reloj de audio simulado.
+
+Etapa 4 debe partir de Choreography.sample(18.762) y ocupar el tiempo restante hasta el final real del audio (~22,13 s decodificados), sin alterar bruscamente poses o posición de la flor. Añadir baile abrazados, noche y final solo tras autorización. Los tiempos musicales se basan en métricas del archivo, con revisión audiovisual todavía pendiente. Reproducción local mediante selector de archivo; no subir MP3.

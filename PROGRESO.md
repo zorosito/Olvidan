@@ -41,3 +41,15 @@ Flor implementada: mirada, flexión de rodillas, recogida, acercamiento, entrega
 
 ## Etapa 3 — Avance 1
 Audio analizado offline; estimación 120,485 BPM, periodo 0,497988 s. Registrados ataques y energía por bandas, con límites del análisis en ANALISIS_MUSICAL.md. music.js define marcas para conservar las poses narrativas y retimar encuentro/flor/abrazo. No se incluye la grabación. Pendiente integración del baile y pruebas.
+
+
+## Etapa 3 — Implementada
+- Análisis reproducible y documentado; tempo estimado 120,485 BPM. No se afirma identificación auditiva de instrumentos ni del compás.
+- music.js retima las poses existentes sin eliminar las escenas de Etapa 2. choreography.js añade pasos individuales desde 9,799 s, unión progresiva de manos desde 11,784 s, elevación 13,293–15,280 s y pequeños pivotes 15,279–18,262 s.
+- Pasos y balanceo ligados a fase musical. Manos resueltas hacia un objetivo compartido incluso durante pivotes; flor anclada a la mano.
+- La historia se evalúa directamente desde audio.currentTime; pausa, reanudar y saltos no acumulan desfase. Sin audio hay previsualización silenciosa. Aviso si la duración seleccionada difiere de la referencia.
+- Fin de esta etapa a 18,762 s; se reservan ~3,36 s para Etapa 4. No se implementaron noche, baile abrazados ni dedicatoria final.
+- Pruebas aprobadas: story.test.cjs, controls.test.cjs (DOM simulado), choreography.test.cjs y sintaxis app.js. Se corrigió un salto de piernas detectado al terminar la entrada.
+- Análisis respaldado y verificado en 7f8c8f1. Este informe acompaña el commit de coreografía: comparar su HEAD con GitHub tras el push.
+- Pendiente revisión audiovisual real y Safari/iPhone; no se certifican percepción del ritmo, renderizado o 60 FPS mediante pruebas numéricas.
+- No se publicó el sitio ni se incluyó la pista comercial. Esperar autorización para Etapa 4.
