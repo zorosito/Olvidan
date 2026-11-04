@@ -31,6 +31,7 @@ function render(state){
 }
 function refresh(){const state=mode==='story'?Experience.sample(time):null;if(state)poses=state.poses;render(state);}
 function schedule(){if(!pending){pending=true;requestAnimationFrame(now=>{pending=false;frame(now);});}}
+function playbackEnd(){return audio.src&&Number.isFinite(audio.duration)&&Math.abs(audio.duration-LOVE_CONFIG.referenceDuration)<=.3?audio.duration:Experience.duration;}
 function frame(now){
  if(!running)return;
  const dt=last===null?0:Math.min((now-last)/1000,.05);last=now;
@@ -39,7 +40,7 @@ function frame(now){
  if(state)poses=state.poses;
  else{transition=Math.min(1,transition+dt/.45);const ease=transition*transition*(3-2*transition);poses=chars.map((c,i)=>{const p=M.pose(mode,time,i?1:-1);return from?M.blend(from[i],p,ease):p;});}
  render(state);
- if(mode==='story'&&time>=Experience.duration)pause();
+ if(mode==='story'&&time>=playbackEnd())pause();
  if(running)schedule();
 }
 async function play(){

@@ -13,3 +13,5 @@ Pruebas sin dependencias: `node tests/story.test.cjs` y `node tests/controls.tes
 Consulta ANALISIS_MUSICAL.md para pulso, marcas y límites de la estimación. El cierre nocturno permanece visible al finalizar. Edita `dedication` en config.js para personalizarlo; el botón Volver a reproducir reinicia la historia.
 
 Etapa 5: controles y renderizado optimizados. Ejecuta todas las comprobaciones con `node tests/run.cjs`. Consulta PRUEBAS.md para los resultados y la validación pendiente en Safari; PUBLICACION.md describe la preparación para GitHub Pages. Sitio todavía no desplegado.
+
+Para probar con el MP3 adjunto ya integrado, ejecutar `python3 tools/prepare_local.py RUTA_AL_MP3` (requiere ffprobe). Genera `.local-preview/` con código y audio local, excluida de Git. Servir esa carpeta localmente; nunca desplegarla con la canción comercial. La raíz del proyecto conserva el selector de audio para distribución sin música incluida.

@@ -10,6 +10,8 @@ get('reset').onclick();const before=requests;frame(23000);assert.equal(requests,
 await get('start').onclick();let samples=0;const original=context.Experience.sample;context.Experience.sample=t=>{samples++;return original(t)};
 get('music').currentTime=19.5;frame(24000);assert.equal(samples,1,'Una muestra por frame');assert.equal(get('status').textContent,'Bailando abrazados');context.Experience.sample=original;
 context.document.hidden=true;listeners.visibilitychange();const hiddenRequests=requests;frame(25000);assert.equal(requests,hiddenRequests);context.document.hidden=false;
+// Keep the final pose while the actual MP3 finishes; do not cut its tail at 22.1.
+get('music').duration=22.151837;get('music').currentTime=0;await get('start').onclick();get('music').currentTime=22.11;frame(26000);assert.equal(get('pause').textContent,'Pausar');assert.equal(get('dedication').style.opacity,1);get('music').currentTime=22.151837;get('music').ended=true;get('music').onended();assert.equal(get('pause').textContent,'Volver a reproducir');get('music').ended=false;
 // A pending playback promise cannot restart the story after reset.
 let resolve;get('music').play=()=>new Promise(r=>{resolve=r});const waiting=get('start').onclick();get('reset').onclick();resolve();await waiting;assert.equal(get('intro').hidden,false);assert.equal(get('pause').disabled,true);
 get('music').play=()=>Promise.reject(new Error('Formato no compatible'));await get('start').onclick();assert.match(get('status').textContent,/No se pudo reproducir/);

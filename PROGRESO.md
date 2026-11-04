@@ -83,3 +83,11 @@ Controlador optimizado: una evaluación de escena por fotograma, sin bucle de di
 
 ## Etapa 6 — Avance 1: integración local de la pista
 Etapa definida por la petición del usuario: comprobar canción y sincronización conservando el proyecto. tools/prepare_local.py genera .local-preview con el MP3 adjunto ya vinculado; carpeta completa ignorada por Git. Se verificó identidad binaria del audio copiado, duración 22,151837 s y reproducción exacta del análisis previo. De los ataques detectados, 39 quedan a menos de 80 ms de la rejilla elegida; sus residuos son 2,52 ms de mediana y 8,36 ms de máximo. Es una medida del ajuste de rejilla, no latencia de reproducción ni validación perceptiva. Pendiente revisión del final del audio y pruebas adicionales.
+
+## Etapa 6 — Integración local y comprobaciones automáticas terminadas
+- Referencia MP3 vinculada en .local-preview, excluida de Git; raíz pública mantiene audio local seleccionable y audioUrl vacío.
+- Decodificación completa sin errores, identidad de copia, rutas y configuración verificadas; análisis musical reproducido. Métricas y límites en PRUEBAS.md.
+- Corregido final anticipado: la pose termina en 22,1 s, pero el audio compatible puede acabar conforme a su duración real. Prueba de regresión añadida y suite completa aprobada.
+- Primer respaldo verificado: be6f2f4. El commit que acompaña este informe incluye la corrección del final; verificar también su push.
+- No se pudo certificar visualmente ni escuchar la experiencia sincronizada en Safari/iPhone. No confundir estimación del pulso y tests simulados con esa validación pendiente.
+- Nada publicado; ninguna pista comercial versionada. Etapas anteriores conservadas.
