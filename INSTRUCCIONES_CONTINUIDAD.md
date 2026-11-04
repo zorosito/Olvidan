@@ -30,3 +30,5 @@ Cierre Etapa 3: app.js usa Choreography.sample, no Story.sample directamente. Or
 Ejecutar también `node tests/choreography.test.cjs`: recorre la coreografía a 120 muestras/s, verifica continuidad, contacto y determinismo. controls.test.cjs carga los nuevos módulos y cubre final/repetición y reloj de audio simulado.
 
 Etapa 4 debe partir de Choreography.sample(18.762) y ocupar el tiempo restante hasta el final real del audio (~22,13 s decodificados), sin alterar bruscamente poses o posición de la flor. Añadir baile abrazados, noche y final solo tras autorización. Los tiempos musicales se basan en métricas del archivo, con revisión audiovisual todavía pendiente. Reproducción local mediante selector de archivo; no subir MP3.
+
+Etapa 4 autorizada: finale.js exporta Experience y envuelve Choreography sin modificar etapas anteriores. app.js usa Experience.sample/duration. tests/finale.test.cjs comprueba continuidad y preservación de la coreografía. Duración total: 22,1 s (no prolongar el audio). Falta integrar presentación nocturna y dedicatoria.

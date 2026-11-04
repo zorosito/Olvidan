@@ -53,3 +53,6 @@ Audio analizado offline; estimación 120,485 BPM, periodo 0,497988 s. Registrado
 - Análisis respaldado y verificado en 7f8c8f1. Este informe acompaña el commit de coreografía: comparar su HEAD con GitHub tras el push.
 - Pendiente revisión audiovisual real y Safari/iPhone; no se certifican percepción del ritmo, renderizado o 60 FPS mediante pruebas numéricas.
 - No se publicó el sitio ni se incluyó la pista comercial. Esperar autorización para Etapa 4.
+
+## Etapa 4 — Avance 1
+Baile abrazados integrado mediante finale.js (Experience), conservando Choreography intacto. Entrada desde 18,762 s, balanceo al pulso y parada suave desde 20,759 s. Final a 22,1 s, dentro de la duración decodificada. La flor permanece en la mano. Pruebas de continuidad y controles aprobadas. Pendientes escenario nocturno y dedicatoria visible.
