@@ -24,3 +24,6 @@ No se ha desplegado GitHub Pages. No se incluye la canción comercial.
 
 ## Etapa 2 — Avance 1
 Encuentro implementado en story.js: entrada desde ambos extremos, parada y respuesta tímida. Historia seleccionada al comenzar; los cuatro movimientos de Etapa 1 se conservan. Reloj compartido con audio.currentTime, tiempos provisionales. Sintaxis comprobada. Pendientes flor, abrazo y verificación visual.
+
+## Etapa 2 — Avance 2
+Flor implementada: mirada, flexión de rodillas, recogida, acercamiento, entrega y reacción con inclinación de cabeza. La flor sigue la mano; la entrega coincide en una posición compartida. Sintaxis y continuidad de posición en recogida/entrega comprobadas. Pendientes abrazo y pruebas finales.
