@@ -1,7 +1,7 @@
 # Continuidad
 Repositorio: https://github.com/zorosito/Olvidan.git
 
-Leer PROGRESO.md y revisar git status antes de cambiar archivos. Etapas 1–3 implementadas; no comenzar Etapa 4 sin autorización del usuario. Completar comprobación visual pendiente cuando haya navegador disponible.
+Leer PROGRESO.md y revisar git status antes de cambiar archivos. Etapas 1–4 implementadas; no comenzar Etapa 5 sin autorización del usuario. Completar comprobación visual pendiente cuando haya navegador disponible.
 
 Proyecto estático sin instalación ni compilación. index.html carga style.css, config.js, motion.js y app.js. Motion genera poses angulares; app dibuja SVG y controla la reproducción. Cuando hay audio seleccionado, el reloj de movimiento usa audio.currentTime. Sin audio, la demostración usa tiempo acumulado. No confundir esta demostración con sincronización musical analizada.
 
@@ -32,3 +32,8 @@ Ejecutar también `node tests/choreography.test.cjs`: recorre la coreografía a 
 Etapa 4 debe partir de Choreography.sample(18.762) y ocupar el tiempo restante hasta el final real del audio (~22,13 s decodificados), sin alterar bruscamente poses o posición de la flor. Añadir baile abrazados, noche y final solo tras autorización. Los tiempos musicales se basan en métricas del archivo, con revisión audiovisual todavía pendiente. Reproducción local mediante selector de archivo; no subir MP3.
 
 Etapa 4 autorizada: finale.js exporta Experience y envuelve Choreography sin modificar etapas anteriores. app.js usa Experience.sample/duration. tests/finale.test.cjs comprueba continuidad y preservación de la coreografía. Duración total: 22,1 s (no prolongar el audio). Falta integrar presentación nocturna y dedicatoria.
+
+
+Cierre Etapa 4: Experience.sample entrega poses, flor, night, heart y dedication. app.js drawEnding aplica las opacidades a SVG y al párrafo de dedicatoria; no hay animación autónoma del fondo. Cielo y estrellas se construyen una sola vez. La dedicatoria se lee con textContent de LOVE_CONFIG.dedication. El corazón y la dedicatoria permanecen al terminar y desaparecen al reiniciar o cambiar a los movimientos de práctica. No eliminar los módulos anteriores: sus pruebas garantizan que se conservan las escenas.
+
+Pruebas: `node tests/story.test.cjs`, `node tests/choreography.test.cjs`, `node tests/finale.test.cjs`, `node tests/controls.test.cjs`. La última comprueba también noche, corazón, dedicatoria y reinicio con DOM simulado. Falta revisión audiovisual real en Safari/iPhone; esa limitación permanece explícita. Etapa 5 requiere autorización.

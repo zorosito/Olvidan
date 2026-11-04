@@ -56,3 +56,14 @@ Audio analizado offline; estimación 120,485 BPM, periodo 0,497988 s. Registrado
 
 ## Etapa 4 — Avance 1
 Baile abrazados integrado mediante finale.js (Experience), conservando Choreography intacto. Entrada desde 18,762 s, balanceo al pulso y parada suave desde 20,759 s. Final a 22,1 s, dentro de la duración decodificada. La flor permanece en la mano. Pruebas de continuidad y controles aprobadas. Pendientes escenario nocturno y dedicatoria visible.
+
+
+## Etapa 4 — Implementada
+- Baile abrazados de 18,762 s a la parada progresiva iniciada en 20,759 s; pequeña inclinación de cabeza y balanceo al pulso. Conserva la flor y enlaza sin salto con Etapa 3.
+- Noche gradual con luna, colina y 24 estrellas SVG fijas; los cuerpos se aclaran para contrastar con el cielo. Corazón desde 20,759 s y dedicatoria desde 21,258 s.
+- Dedicatoria tomada de config.js mediante textContent; admite edición y ajuste de línea. Permanece visible junto al abrazo y al botón Volver a reproducir al finalizar.
+- Final detenido en 22,1 s, dentro del fragmento; las decoraciones siguen el tiempo del audio y se restablecen al reiniciar. Sin temporizadores ni animaciones CSS independientes.
+- Pruebas aprobadas: historia, coreografía, final y controles con DOM simulado, incluida aparición de noche/corazón/texto y limpieza al reiniciar; sintaxis JavaScript comprobada.
+- Primer avance respaldado y verificado: deb6c88. El presente informe acompaña el commit final de la escena nocturna; verificar HEAD remoto después del push.
+- Pendiente en Etapa 5: revisión visual, reproducción real con audio, Safari/iPhone, ajustes y rendimiento. No se certifican 60 FPS ni apariencia mediante pruebas simuladas.
+- No se inició Etapa 5, ni se publicó el sitio, ni se subió la canción comercial.
