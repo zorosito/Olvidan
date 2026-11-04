@@ -94,3 +94,6 @@ Etapa definida por la petición del usuario: comprobar canción y sincronizació
 
 ## Publicación solicitada — Bloqueada por el plan de GitHub
 Se verificaron permisos administrativos y repositorio privado. La solicitud de crear GitHub Pages desde main /(root) recibió HTTP 422: «Your current plan does not support GitHub Pages for this repository.» No se modificaron animaciones, no se cambió la visibilidad del repositorio y no hay despliegue verificado. Para continuar: autorización explícita para hacer público el repositorio (incluye código e historial), o habilitar un plan compatible con Pages en repositorios privados. La canción continúa excluida.
+
+## GitHub Pages — Activación autorizada
+El usuario autorizó hacer público el repositorio. GitHub confirmó private=false y creó Pages desde main /(root), HTTPS obligatorio, URL asignada https://zorosito.github.io/Olvidan/. Este registro documenta configuración; la disponibilidad se debe verificar tras el despliegue. No se cambiaron animaciones ni se incluyó la canción. Usar Elegir audio local desde iPhone para el fragmento original.
